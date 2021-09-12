@@ -1,0 +1,2 @@
+create database tao_xoa_csdl
+drop database tao_xoa_csdl
