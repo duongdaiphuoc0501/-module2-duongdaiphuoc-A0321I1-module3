@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 5px;
+        }
+
+        .row::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .head{
+            background-color: black;
+            text-align: center;
+            font-size: 16pt;
+        }
+
+        .left{
+            height: 555px;
+            background-color: lightgray;
+            text-align: center;
+            font-size: 12pt;
+        }
+
+        .content{
+            height: 555px;
+            background-color: white;
+        }
+
+        .right{
+            height: 555px;
+            background-color: lightgray;
+            text-align: center;
+            font-size: 12pt;
+        }
+
+        .footer{
+            background-color: gray;
+            text-align: center;
+            font-size: 16pt;
+        }
+
+        .titleheader{
+            color: white;
+        }
+
+        .titleleft{
+            color: blue;
+            margin-bottom: 100px;
+        }
+        .bt{
+            height: 70px;
+            width: 150px;
+            background-color: lightgray;
+            margin-bottom: 30px;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="row head">
+        <div class="col-1">
+            <span class="titleheader">Logo</span>
+        </div>
+        <div class="col-1">
+            <span class="titleheader">Home</span>
+        </div>
+        <div class="col-1">
+            <span class="titleheader">About</span>
+        </div>
+        <div class="col-1">
+            <span class="titleheader">Project</span>
+        </div>
+        <div class="col-1">
+            <span class="titleheader">Contact</span>
+        </div>
+        <div class="col-6">
+        </div>
+        <div class="col-1">
+            <span class="titleheader">Login</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2 left">
+            <span class="titleleft">Link</span><br><br>
+            <span class="titleleft">Link</span><br><br>
+            <span class="titleleft">Link</span>
+        </div>
+        <div class="col-8 content">
+            <h1>Welcome</h1>
+            <p>STARTUP RUNWAY ĐÃ TRỞ LẠI: VÒNG CHUNG KẾT PHÁ VỠ MỌI KHOẢNG CÁCH
+                Sau một thời gian dài trì hoãn bởi diễn biến phức tạp của dịch bệnh COVID-19, Vòng Chung kết Cuộc thi Startup Runway 2021 đã chính thức quay trở lại. Cùng với những đổi mới trong lộ trình, cuộc thi hứa hẹn sẽ mang đến màn tranh tài bùng nổ trên sàn đấu chung kết khởi nghiệp sắp tới. 
+                Tại Vòng Chung kết này, hành trình “hoá kỳ lân” sẽ tiếp tục được diễn ra theo hình thức trực tuyến nhằm mục đích tìm ra đội thi có ý tưởng khởi nghiệp xuất sắc nhất. Mặc dù có sự trở ngại lớn về khoảng cách, tuy nhiên BTC vẫn sẽ đảm bảo cho cuộc thi được tổ chức một cách chuyên nghiệp và tiến hành theo đúng như những quy định ban đầu.
+                Để cuộc thi có thể diễn ra một cách suôn sẻ, TOP 5 đội thi hãy chuẩn bị thật tốt những thiết bị cần thiết cho hình thức thi trực tuyến. Đừng quên sắp xếp lại các kế hoạch và cùng nhau bứt phá những giới hạn ở Vòng Chung kết nhé! 
+                Hãy tiếp tục theo dõi Fanpage để cập nhật những thông tin mới nhất từ cuộc thi cùng chúng mình nhé!</p>
+        </div>
+        <div class="col-2 right">
+            <input class="bt" type="button" value="ADS">
+            <input class="bt" type="button" value="ADS">
+            <input class="bt" type="button" value="ADS">
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-12">
+            <span class="titleheader">Footer text</span>
+        </div>
+    </div>
+</body>
+</html>

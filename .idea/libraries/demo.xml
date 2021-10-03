@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/demo/a03i-bootstrap.zip!/" />
+      <root url="jar://$PROJECT_DIR$/demo/a03i-design-layout-web.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

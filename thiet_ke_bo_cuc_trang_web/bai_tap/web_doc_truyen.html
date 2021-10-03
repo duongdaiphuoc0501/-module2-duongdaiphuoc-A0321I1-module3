@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 5px;
+    }
+
+    .row::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .head{
+        background-color: cyan;
+        text-align: left;
+        font-size: 20pt;
+    }
+
+    .headlink{
+        background-color: black;
+        text-align: center;
+        font-size: 16pt;
+    }
+
+    .leftright{
+        height: 555px;
+        background-color: lightgray;
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .content{
+        height: 555px;
+        background-color: white;
+        border: 1px solid;
+    }
+
+    .footer{
+        background-color: gray;
+        text-align: center;
+        font-size: 16pt;
+    }
+
+    .titleheader{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .titleheaderlink{
+            color: white;
+    }
+
+    a{
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #menu{
+    height: 30px;
+    padding:0;
+    margin:0;
+    background-color: #000000;
+    border: 0px;
+    }
+ 
+    #menu ul, #menu li{
+        padding:0;
+        margin:0;
+    }
+
+    #menu li{
+        position: relative;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+
+    #menu li a{
+        width:100px;
+        height: 30px;
+        display: block;
+        text-decoration:none;
+        text-align: center;
+        line-height: 30px;
+        background-color: black;
+        color: white;
+    }
+ 
+    #menu ul ul li a{
+        width: 200px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #menu li a:hover{
+        background-color: aquamarine;
+    }
+
+    #menu ul ul{
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        visibility: hidden;
+    }
+
+    #menu ul li:hover ul{
+        visibility: visible;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+            width: 100%;
+     }
+    }
+</style>
+<body>
+    <div class="row head">
+        <span class="titleheader">doctruyen.com</span>
+    </div>
+    <div class="row headlink">
+        <div class="col-8">
+            <div id="menu">
+                <ul>
+ 
+                    <li><a href="#">Trang chủ</a>
+                    </li>
+                    <li><a href="#">Thể loại</a>
+                        <ul>
+                        <li><a href="#">Khoa học viễn tưởng</a></li>
+                        <li><a href="#">Kinh dị</a></li>
+                        <li><a href="#">Trinh thám</a></li>
+                        <li><a href="#">Hài hước</a></li>
+                        <li><a href="#">Tình cảm</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="col-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2 leftright">
+        </div>
+        <div class="col-8 content">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEHZR0rIUbZdwJG8GXq6luN-_vuwhPYr1MH6Thjz87QhkolP3NAlk3qUv1kVgf9gj3W0&usqp=CAU" height="120" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="https://wallpaperaccess.com/full/17350.jpg" height="120" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/499/281/74/anime-doraemon-wallpaper-preview.jpg" height="120" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="">Naruto</a>
+                </div>
+                <div class="col-4">
+                    <a href="">One piece</a>
+                </div>
+                <div class="col-4">
+                    <a href="">Doraemon</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://lh3.googleusercontent.com/Z4IOFfy_QJY15TLwd4sKZfaKXXrkvGyZqc763R3NaLUUF5Uxejyao2vm1Bw-6HNxcgZc=w512" height="120" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="https://images5.alphacoders.com/301/thumb-1920-301657.png" height="120" width="100%">
+                </div>
+                <div class="col-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-BzZ_33cYgpAFVwXSaxQpFg42v7YXSnvztVwI7Hoe8M2c71Wr3o4UOpZ_SAG5AR9wHo&usqp=CAU" height="120" width="100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="">Dragon ball</a>
+                </div>
+                <div class="col-4">
+                    <a href="">Fairy tail</a>
+                </div>
+                <div class="col-4">
+                    <a href="">Bleach</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 leftright">    
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-12">
+            <span class="titleheader">Đồ free mà đòi cho đẹp ^_^</span>
+        </div>
+    </div>
+</body>
+</html>
